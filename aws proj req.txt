@@ -1,0 +1,14 @@
+data stream: stores in tempary place
+
+through fire host   stores in redshift
+
+emr cluster (combined ec2 serv) 
+\
+ethena serv under aws( creates schema tables)
+
+1. ec2--- scoop agent+spark
+2. connect hive through scoop..retrieve data and stores in s3 (it might be    daily basis/ weekly basis)
+3.
+
+kenesis/emr/ethena/
+terraform/cloudformation  (backup and recovery)  cloud front

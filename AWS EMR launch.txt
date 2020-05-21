@@ -1,0 +1,36 @@
+o to the Amazon EC2 console
+In the Navigation pane, click Key Pairs
+On the Key Pairs page, click Create Key Pair
+In the Create Key Pair dialog box, enter a name for your key pair, such as, mykeypair
+Click Create
+Save the resulting PEM file in a safe location
+Modify Your PEM File
+Amazon Elastic MapReduce (Amazon EMR) enables you to work interactively with your cluster, allowing you to test cluster steps or troubleshoot your cluster environment. You use your PEM file to authenticate to the master node. The PEM file requires a modification based on the tool you use that supports your operating system.
+
+To modify your credentials file:
+Download PuTTYgen.exe to your computer from:
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+Launch PuTTYgen
+Click Load
+Select the PEM file you created earlier
+Click Open
+Click OK on the PuTTYgen Notice telling you the key was successfully imported
+Enter a pass phrase in the Key passphrase field
+Click Save private key to save the key in the PPK format
+Enter a name for your PuTTY private key, such as, mykeypair.ppk
+Click Save
+Exit the PuTTYgen application
+
+Your credentials file is now modified to allow you to log in directly to the master node of your running cluster.
+
+================
+
+Download PuTTY.exe to your computer from:
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+Start PuTTY.
+In the Category list, click Session.
+In the Host Name field, type hadoop@ec2-13-233-192-26.ap-south-1.compute.amazonaws.com
+In the Category list, expand Connection > SSH, and then click Auth.
+For Private key file for authentication, click Browse and select the private key file (srikeypair.ppk) used to launch the cluster.
+Click Open.
+Click Yes to dismiss the security alert.
